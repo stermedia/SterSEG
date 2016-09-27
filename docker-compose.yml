@@ -1,0 +1,5 @@
+pet:
+  build: .
+  volumes:
+    - .:/usr/src/app
+  command: bash
