@@ -1,5 +1,7 @@
 pet:
   build: .
+  ports:
+    - 8888:8888
   volumes:
     - .:/usr/src/app
-  command: bash
+  command: python server.py
