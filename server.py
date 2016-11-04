@@ -8,7 +8,7 @@ class MainHandler(tornado.web.RequestHandler):
 def make_app():
     return tornado.web.Application([
         (r"/", MainHandler),
-    ])
+    ], debug=True)
 
 if __name__ == "__main__":
     app = make_app()
